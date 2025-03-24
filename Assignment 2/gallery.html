@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d3d3d3;
+            padding: 10px;
+        }
+
+        .header-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        h1 {
+            flex-grow: 1;
+            text-align: center;
+            margin: 0;
+        }
+
+        .plant-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .plant-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .plant-item img {
+            width: 50%;
+            height: 50%;
+            border-radius: 10px;
+        }
+
+        .plant-item p {
+            margin: 10px 0 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-header">
+        <!-- Link for h.png to open index.html -->
+        <a href="index.html">
+            <img src="h.png" alt="Fern Icon" class="header-icon">
+        </a>
+        <h1>🌿 Plant Gallery</h1>
+        <!-- Link for image 24.png to open care.html -->
+        <a href="care.html">
+            <img src="image 24.png" alt="Jade Icon" class="header-icon">
+        </a>
+    </div>
+    <div class="plant-gallery">
+        <div class="plant-item">
+            <img src="fern.png" alt="Fern">
+            <p>Fern</p>
+        </div>
+        <div class="plant-item">
+            <img src="cac.png" alt="Cactus">
+            <p>Cactus</p>
+        </div>
+        <div class="plant-item">
+            <img src="or.png" alt="Orchid">
+            <p>Orchid</p>
+        </div>
+        <div class="plant-item">
+            <img src="mon.png" alt="Money Plant">
+            <p>Money Plant</p>
+        </div>
+        <div class="plant-item">
+            <img src="bo.png" alt="Boishi">
+            <p>Boishi</p>
+        </div>
+        <div class="plant-item">
+            <img src="jade.png" alt="Jade">
+            <p>Jade</p>
+        </div>
+    </div>
+</body>
+</html>
